@@ -3,8 +3,7 @@
 A state-of-the-art, high-converting, and beautiful landing page built with pure semantic HTML5, modern vanilla CSS3, and native JavaScript. It is fully responsive across mobile, tablet, and desktop viewports, featuring elegant glassmorphism, fluid SVG animations, and native dark mode support.
 
 ## 🚀 Live Demo
-You can deploy this page on GitHub Pages, Netlify, or Vercel. 
-*(Once deployed, replace this text with your live URL!)*
+You can deploy this page on Netlify:https://developingpage.netlify.app/
 
 ---
 
