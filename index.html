@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SaaSPro - Build Smarter. Scale Faster. The ultimate all-in-one workflow automation and team collaboration platform.">
+    <title>SaaSPro | Build Smarter. Scale Faster.</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+    <header class="navbar-header" id="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo-link">
+                <span class="logo-text">SaaSPro<span class="logo-dot">.</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#features" class="nav-link">Platform</a></li>
+                    <li class="nav-item"><a href="#solutions" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#stats" class="nav-link">Solutions</a></li>
+                    <li class="nav-item"><a href="#reviews" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="#cta" class="nav-link">Resources</a></li>
+                </ul>
+            </nav>
+            
+            <div class="navbar-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#cta" class="btn-text">Log In</a>
+                <a href="#cta" class="btn btn-primary nav-cta">Start Free Trial</a>
+            </div>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div class="container hero-grid">
+          
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">Trusted by 10,000+ teams</span>
+                    <svg class="badge-arrow" width="32" height="24" viewBox="0 0 32 24" fill="none">
+                        <path d="M2 22C6 14 14 6 26 2M26 2H18M26 2V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <h1 class="hero-title">
+                    Build Smarter.<br>
+                    <span class="text-gradient">Scale Faster.</span>
+                </h1>
+                
+                <p class="hero-description">
+                    The all-in-one platform to automate workflows, collaborate with your team, and grow your business. Get real-time insights and scale effortlessly.
+                </p>
+                
+                <div class="hero-btn-group">
+                    <a href="#cta" class="btn btn-primary">Start Free Trial</a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fa-solid fa-circle-play"></i> Take a Tour
+                    </a>
+                </div>
+            </div>
+          
+            <div class="hero-visual">
+                <!-- Outer decorative glowing background -->
+                <div class="visual-bg-backdrop"></div>
+                
+                <div class="person-backdrop">
+                    <!-- High-quality Unsplash image of a friendly professional smiling with laptop -->
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop" alt="SaaSPro Professional Developer" class="hero-person-img">
+                </div>
+              
+                <div class="floating-card stats-card" id="productivity-card">
+                    <div class="card-header">
+                        <div class="icon-circle text-success">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+                        <div class="card-header-text">
+                            <span class="card-num">+96.3%</span>
+                            <span class="card-label">Productivity boost</span>
+                        </div>
+                    </div>
+                    <div class="sparkline-container">
+                        <svg class="sparkline" viewBox="0 0 100 30" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="sparkline-grad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="var(--brand-primary)" stop-opacity="0.3"></stop>
+                                    <stop offset="100%" stop-color="var(--brand-primary)" stop-opacity="0.0"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path class="sparkline-area" d="M0,30 L0,20 Q15,5 30,22 T60,10 T85,15 T100,5 L100,30 Z" fill="url(#sparkline-grad)"></path>
+                            <path class="sparkline-line" d="M0,20 Q15,5 30,22 T60,10 T85,15 T100,5" fill="none" stroke="var(--brand-primary)" stroke-width="2.5" stroke-linecap="round"></path>
+                            <circle cx="100" cy="5" r="3.5" fill="var(--brand-primary)"></circle>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="logos-section">
+        <div class="container">
+            <p class="logos-title">Trusted by innovative companies worldwide</p>
+            <div class="logos-grid">
+
+                <div class="logo-item" aria-label="Google">
+                    <svg viewBox="0 0 24 24" class="company-logo">
+                        <path d="M12.24 10.285V13.4h6.887c-.275 1.565-1.88 4.604-6.887 4.604-4.33 0-7.866-3.577-7.866-8s3.536-8 7.866-8c2.46 0 4.105 1.025 5.047 1.926l2.427-2.334C17.955 2.192 15.34 1 12.24 1 6.033 1 1 6.033 1 12.24s5.033 11.24 11.24 11.24c6.478 0 10.793-4.537 10.793-10.983 0-.746-.08-1.32-.176-1.888H12.24z" fill="currentColor"/>
+                    </svg>
+                </div>
+          
+                <div class="logo-item" aria-label="Microsoft">
+                    <svg viewBox="0 0 23 23" class="company-logo">
+                        <path fill="currentColor" d="M0 0h11v11H0zM12 0h11v11H12zM0 12h11v11H0zM12 12h11v11H12z"/>
+                    </svg>
+                </div>
+        
+                <div class="logo-item" aria-label="Slack">
+                    <svg viewBox="0 0 24 24" class="company-logo">
+                        <path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523 2.528 2.528 0 0 1-2.522-2.523 2.528 2.528 0 0 1 2.522-2.52h2.52v2.52zm1.261 0a2.528 2.528 0 0 1 2.52-2.52h5.043a2.528 2.528 0 0 1 2.522 2.52v5.043a2.528 2.528 0 0 1-2.522 2.52H8.823a2.528 2.528 0 0 1-2.52-2.52v-5.043zm2.52-6.342a2.528 2.528 0 0 1-2.52-2.52 2.528 2.528 0 0 1 2.52-2.522 2.528 2.528 0 0 1 2.522 2.522v2.52H8.823zm0 1.261a2.528 2.528 0 0 1 2.522 2.52v5.043a2.528 2.528 0 0 1-2.522 2.52H3.78a2.528 2.528 0 0 1-2.52-2.52V12.6a2.528 2.528 0 0 1 2.52-2.52h5.043zm6.356-3.781a2.528 2.528 0 0 1 2.52-2.52 2.528 2.528 0 0 1 2.522 2.52 2.528 2.528 0 0 1-2.522 2.52h-2.52V6.303zm-1.262 0a2.528 2.528 0 0 1-2.52 2.52H6.303a2.528 2.528 0 0 1-2.522-2.52V1.26a2.528 2.528 0 0 1 2.522-2.52h5.043a2.528 2.528 0 0 1 2.52 2.52v5.043zm-2.52 8.862a2.528 2.528 0 0 1 2.52 2.52 2.528 2.528 0 0 1-2.52 2.522 2.528 2.528 0 0 1-2.522-2.522v-2.52h2.522zm0-1.262a2.528 2.528 0 0 1-2.522-2.52V7.56a2.528 2.528 0 0 1 2.522-2.52h5.043a2.528 2.528 0 0 1 2.52 2.52v5.043a2.528 2.528 0 0 1-2.52 2.52H11.397z" fill="currentColor"/>
+                    </svg>
+                </div>
+          
+                <div class="logo-item" aria-label="Notion">
+                    <svg viewBox="0 0 24 24" class="company-logo">
+                        <path d="M4.12 2.3A2.84 2.84 0 0 1 6.57.97h11.23a2.86 2.86 0 0 1 2.45 1.34l2.58 4.22a2.86 2.86 0 0 1-.36 3.63L14.7 18.84a2.86 2.86 0 0 1-4.04 0L2.83 11.2a2.86 2.86 0 0 1-.38-3.63L5 3.3a2.84 2.84 0 0 1 2.3-1.34M12 4.76h-2.4v9.52h2.4V4.76zm4.8 0h-2.4v9.52h2.4V4.76z" fill="currentColor"/>
+                    </svg>
+                </div>
+          
+                <div class="logo-item" aria-label="Dropbox">
+                    <svg viewBox="0 0 24 24" class="company-logo">
+                        <path d="M6 1.83l6 3.82-6 3.82-6-3.82zm12 0l6 3.82-6 3.82-6-3.82zM0 13.29l6-3.82 6 3.82-6 3.82zm18-3.82l6 3.82-6 3.82-6-3.82zM6 18.23l6-3.82 6 3.82-6 3.82zm6 1.15v2.79l-6 1.83v-1.83zm0 0l6 2.79-6 1.83v-1.83z" fill="currentColor"/>
+                    </svg>
+                </div>
+            
+                <div class="logo-item" aria-label="Stripe">
+                    <svg viewBox="0 0 24 24" class="company-logo">
+                        <path d="M13.962 4.86c0-2.274-1.18-3.385-3.238-3.385-2.073 0-3.385 1.111-3.385 3.385 0 2.275 1.312 3.386 3.385 3.386 2.058 0 3.238-1.111 3.238-3.386zm-3.238 6.57c-2.88 0-4.938 1.515-4.938 4.41v4.887c0 2.895 2.058 4.41 4.938 4.41 2.862 0 4.904-1.515 4.904-4.41V15.84c0-2.895-2.042-4.41-4.904-4.41z" fill="currentColor"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="ticker-banner">
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <span class="ticker-item">Better Tools <span class="ticker-star">✦</span></span>
+                <span class="ticker-item">Better Workflow <span class="ticker-star">✦</span></span>
+                <span class="ticker-item">Better Growth <span class="ticker-star">✦</span></span>
+                <span class="ticker-item">Better Tools <span class="ticker-star">✦</span></span>
+                <span class="ticker-item">Better Workflow <span class="ticker-star">✦</span></span>
+                <span class="ticker-item">Better Growth <span class="ticker-star">✦</span></span>
+                <span class="ticker-item">Better Tools <span class="ticker-star">✦</span></span>
+                <span class="ticker-item">Better Workflow <span class="ticker-star">✦</span></span>
+                <span class="ticker-item">Better Growth <span class="ticker-star">✦</span></span>
+                <span class="ticker-item">Better Tools <span class="ticker-star">✦</span></span>
+                <span class="ticker-item">Better Workflow <span class="ticker-star">✦</span></span>
+                <span class="ticker-item">Better Growth <span class="ticker-star">✦</span></span>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="features-section" id="features">
+        <div class="container features-grid">
+            
+  
+            <div class="features-left-block">
+                <div class="features-list-wrapper">
+                    <div class="feature-toggle-card active" data-feature="automation">
+                        <div class="toggle-icon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div class="toggle-content">
+                            <h3>Workflow Automation</h3>
+                            <p>Automate repetitive tasks, trigger operations, and save your team valuable hours every week.</p>
+                            <span class="active-progress-bar"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-toggle-card" data-feature="analytics">
+                        <div class="toggle-icon">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <div class="toggle-content">
+                            <h3>Advanced Analytics</h3>
+                            <p>Get instant real-time data insights, track performance metrics, and make smart data-driven decisions.</p>
+                            <span class="active-progress-bar"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-toggle-card" data-feature="collaboration">
+                        <div class="toggle-icon">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <div class="toggle-content">
+                            <h3>Team Collaboration</h3>
+                            <p>Collaborate seamlessly with custom shared boards, comments, and task assignments instantly.</p>
+                            <span class="active-progress-bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features-right-block">
+                
+                <div class="mock-dashboard-panel glass-card">
+                    <div class="panel-header">
+                        <div class="panel-window-controls">
+                            <span class="dot-btn red"></span>
+                            <span class="dot-btn yellow"></span>
+                            <span class="dot-btn green"></span>
+                        </div>
+                        <div class="panel-tab-title" id="dashboard-tab-title">Automation Dashboard</div>
+                    </div>
+                    
+                    <div class="panel-content">
+                        <div class="dashboard-stat-row">
+                            <div class="stat-main">
+                                <span class="stat-label">Total Revenue Balance</span>
+                                <h3 class="stat-value" id="dashboard-main-value">$124,560</h3>
+                            </div>
+                            <span class="stat-badge success" id="dashboard-badge-value">+12.4% this month</span>
+                        </div>
+                        
+                        <div class="dashboard-chart-wrapper">
+                            <svg class="interactive-chart" id="dashboard-svg-chart" viewBox="0 0 400 150">
+                                <defs>
+                                    <linearGradient id="chart-area-grad" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="var(--brand-primary)" stop-opacity="0.25"></stop>
+                                        <stop offset="100%" stop-color="var(--brand-primary)" stop-opacity="0.0"></stop>
+                                    </linearGradient>
+                                </defs>
+
+                                <line x1="0" y1="30" x2="400" y2="30" stroke="rgba(0,0,0,0.05)" stroke-width="1"></line>
+                                <line x1="0" y1="70" x2="400" y2="70" stroke="rgba(0,0,0,0.05)" stroke-width="1"></line>
+                                <line x1="0" y1="110" x2="400" y2="110" stroke="rgba(0,0,0,0.05)" stroke-width="1"></line>
+                                
+                  
+                                <path class="chart-area-path" id="chart-area" d="M0,150 L0,110 Q50,70 100,120 T200,60 T300,90 T400,40 L400,150 Z" fill="url(#chart-area-grad)"></path>
+                                <path class="chart-stroke-path" id="chart-line" d="M0,110 Q50,70 100,120 T200,60 T300,90 T400,40" fill="none" stroke="var(--brand-primary)" stroke-width="3.5" stroke-linecap="round"></path>
+                                
+                    
+                                <circle id="chart-node-1" cx="100" cy="120" r="5" fill="var(--brand-primary)" stroke="white" stroke-width="2"></circle>
+                                <circle id="chart-node-2" cx="200" cy="60" r="5" fill="var(--brand-primary)" stroke="white" stroke-width="2"></circle>
+                                <circle id="chart-node-3" cx="300" cy="90" r="5" fill="var(--brand-primary)" stroke="white" stroke-width="2"></circle>
+                                <circle id="chart-node-4" cx="400" cy="40" r="5" fill="var(--brand-primary)" stroke="white" stroke-width="2"></circle>
+                            </svg>
+                        </div>
+                        
+                        <div class="dashboard-list-card">
+                            <span class="list-card-title">Completed Workflows</span>
+                            <ul class="dashboard-list-items" id="dashboard-list-items">
+                                <li class="dashboard-list-item checked">
+                                    <span class="checkbox-box"><i class="fa-solid fa-check"></i></span>
+                                    <span class="item-text">Review new team members on boarding</span>
+                                </li>
+                                <li class="dashboard-list-item checked">
+                                    <span class="checkbox-box"><i class="fa-solid fa-check"></i></span>
+                                    <span class="item-text">Approve project budgets and invoices</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="highlight-info-box">
+                    <h2>Everything you need to run your business in one place.</h2>
+                    <p>Manage projects, track performance, and scale your business effortlessly without shifting tabs or buying disconnected subscription models.</p>
+                    <a href="#cta" class="action-link">Explore Platform <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section class="stats-section" id="stats">
+        <div class="container stats-wrapper">
+            <div class="section-heading text-center">
+                <span class="sub-heading">Global Scale</span>
+                <h2>Built for high performance</h2>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-display-card glass-card">
+                    <div class="stat-card-icon">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <span class="stat-number">98.5%</span>
+                    <span class="stat-desc-label">Guaranteed server uptime</span>
+                </div>
+                
+
+                <div class="stat-display-card glass-card">
+                    <div class="stat-card-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-desc-label">Active dedicated client support</span>
+                </div>
+          
+                <div class="stat-display-card glass-card">
+                    <div class="stat-card-icon">
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span class="stat-number">4.9/5</span>
+                    <span class="stat-desc-label">User review ratings worldwide</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section" id="reviews">
+        <div class="container reviews-container">
+            <div class="reviews-header text-center">
+                <h2>Our customer reviews</h2>
+            </div>
+            
+            <div class="review-carousel">
+                <div class="carousel-track" id="carousel-track">
+                    <!-- Review Slide 1 -->
+                    <div class="review-slide active" data-index="0">
+                        <div class="review-card glass-card">
+                            <div class="review-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-quote">
+                                "SaaSPro has completely transformed the way we work. Our productivity has increased by 40% since we started using the platform. Collaborative tasks that once took us days are now executed automatically in minutes."
+                            </p>
+                            <div class="review-author-meta">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="Craig Schleicher avatar" class="author-avatar">
+                                <div class="author-info">
+                                    <h4 class="author-name">Craig Schleicher</h4>
+                                    <span class="author-role">Creative Director, TechFlow</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="review-slide" data-index="1">
+                        <div class="review-card glass-card">
+                            <div class="review-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-quote">
+                                "The analytics dashboard is a game-changer. Being able to visualize our revenue channels and click through automated tasks in real-time has allowed us to scale with complete confidence."
+                            </p>
+                            <div class="review-author-meta">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" alt="Elena Rostova avatar" class="author-avatar">
+                                <div class="author-info">
+                                    <h4 class="author-name">Elena Rostova</h4>
+                                    <span class="author-role">Head of Growth, DataSphere</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="review-slide" data-index="2">
+                        <div class="review-card glass-card">
+                            <div class="review-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p class="review-quote">
+                                "The team collaboration features are exceptionally polished. The UI feels incredibly sleek and fast, which makes onboarding new team members a breeze. Uptime and performance have been flawless."
+                            </p>
+                            <div class="review-author-meta">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop" alt="Marcus Vance avatar" class="author-avatar">
+                                <div class="author-info">
+                                    <h4 class="author-name">Marcus Vance</h4>
+                                    <span class="author-role">Operations Manager, CloudLaunch</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-navigation">
+                    <button class="carousel-arrow prev" id="carousel-prev" aria-label="Previous Review">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <div class="carousel-dots" id="carousel-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="carousel-arrow next" id="carousel-next" aria-label="Next Review">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta-section" id="cta">
+        <div class="container cta-container">
+            <h2 class="cta-section-title">Let's build something great together</h2>
+            <div class="cta-grid">
+                
+               
+                <div class="cta-card glass-card hover-glow-card">
+                    <div class="card-icon-header">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <h3>Book a Demo</h3>
+                    <p>Speak to a personal advisor and see SaaSPro in action with our dedicated solution experts.</p>
+                    <a href="#" class="btn btn-secondary cta-card-btn">Book Demo <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+                <div class="cta-card glass-card hover-glow-card featured-cta-card">
+                    <div class="card-icon-header">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <h3>Contact Sales</h3>
+                    <p>Have questions? Our custom solutions team is here to help you configure the right plan for your business.</p>
+                    <a href="#" class="btn btn-primary cta-card-btn">Contact Sales <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer-grid">
+            
+            <div class="footer-brand-column">
+                <span class="footer-logo">SaaSPro<span class="logo-dot">.</span></span>
+                <p class="footer-desc">
+                    Manage projects, track performance, and automate your workflow with a modern conversion-focused experience designed to communicate value and drive hyper-growth.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links-column">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#features">Integrations</a></li>
+                    <li><a href="#stats">Pricing Plan</a></li>
+                    <li><a href="#features">Enterprise</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#home">About Us</a></li>
+                    <li><a href="#home">Careers</a></li>
+                    <li><a href="#home">Blog Feed</a></li>
+                    <li><a href="#home">Press Kit</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#home">Help Center</a></li>
+                    <li><a href="#home">Documentation</a></li>
+                    <li><a href="#home">Webinars</a></li>
+                    <li><a href="#home">Community</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 SaaSPro. All rights reserved. Highly premium digital product design.</p>
+            <ul class="footer-legal-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Security Details</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Scroll to Top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
